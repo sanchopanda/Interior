@@ -1,0 +1,52 @@
+.toggle {
+  display: inline-block;
+  margin-left: auto;
+  position: relative;
+  width: 50px;
+  height: 24px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  transition: .5s;
+}
+
+.toggle__line {
+  display: block;
+  height: 4px;
+  width: 50px;
+  background-color: #000;
+  transition: .5s;
+  &:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+  };
+  &:last-child {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  };
+}
+
+.toggle--close {
+  width: 24px;
+}
+
+.toggle--close .toggle__line {
+  display: block;
+  height: 4px;
+  width: 31px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  &:first-child {
+    transform: translateY(-20px);
+    opacity: 0;
+  };
+  &:last-child {
+    bottom: 10px;
+    transform: rotate(-45deg);
+  };
+}
+
