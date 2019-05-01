@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+  width: 110px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__vk {
+  background: url(../img/icon-vk.png) no-repeat;
+}
+
+.social__facebook {
+  background: url(../img/icon-facebook.png) no-repeat;
+}
+
+.social__instagram {
+  background: url(../img/icon-instagram.png) no-repeat;
+}
+
+.social__item {
+  width: 15px;
+  height: 15px;
+  background-position: center center;
+}
+

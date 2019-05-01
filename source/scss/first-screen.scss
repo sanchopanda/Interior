@@ -1,0 +1,41 @@
+.first-screen__image {
+  height: 595px;
+  .col {
+    display: flex;
+  }
+}
+
+.first-screen__opening {
+  margin: auto 0;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.first-screen {
+  width: 100%;
+  background: url("../img/main-cover-bg.png") no-repeat, url("../img/main-bg.jpg") no-repeat;
+  background-position: left 0px center, center center;
+  background-size: 50% 100%, 1170px 595px;
+}
+
+.first-screen__social {
+  height: 84px;
+}
+
+
+.first-screen__title {
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.first-screen__slogan {
+  color: #fff;
+  font-size: 14px;
+}
+

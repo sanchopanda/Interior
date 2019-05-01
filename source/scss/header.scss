@@ -1,0 +1,42 @@
+.header {
+  height: 84px;
+  .col {
+     display: flex;
+  }
+}
+
+
+
+.header__toggle {
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0;
+}
+
+.header__logo {
+  display: block;
+  width: 63px;
+  height: 29px;
+  background: url("../img/logo.png");
+  margin: auto;
+}
+
+
+.header__phone {
+  text-align: right;
+  display: inline-block;
+  width: 180px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  background: url(../img/icon-phone.svg) no-repeat;
+  background-size: 12px 17px;
+  background-position: left 15px center;
+
+}
+
+

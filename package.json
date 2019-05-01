@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "del": "^4.0.0",
+    "gulp-google-webfonts": "^2.1.0",
     "npm": "^6.4.1"
   }
 }
