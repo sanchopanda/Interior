@@ -1,0 +1,62 @@
+.features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features__item:nth-child(2n) {
+  padding-top: 210px;
+}
+
+
+.features__count {
+  font-family: 'Playfair Display', serif;
+  color: #fde3c9;
+  font-weight: bold;
+  font-size: 85px;
+}
+
+.features__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.features__description {
+  padding-right: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+@media (max-width: $lg) {
+  .features__item:nth-child(2n) {
+    padding-top: 150px;
+  }
+
+  .features__title {
+    font-size: 24px;
+  }
+
+  .features__description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: $sm) {
+
+  .features {
+   padding-bottom: 50px;
+}
+
+  .features__item:nth-child(2n) {
+    padding-top: 0px;
+  }
+
+  .features .container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+}
+
+

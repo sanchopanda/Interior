@@ -84,6 +84,7 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("source/scss/**/*.{scss,sass}", ["style"]).on("change", server.reload);
   gulp.watch("source/*.html", ["html"]);
   gulp.watch("build/*.html").on("change", server.reload);
+  gulp.watch("source/img/**/*.{png,jpg,svg}", ["images"]).on("change", server.reload);
 });
 
 

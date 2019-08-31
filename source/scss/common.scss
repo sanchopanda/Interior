@@ -3,3 +3,24 @@
   padding: 0 10px;
   margin: 0 auto;
 }
+
+@media (max-width: $xl - 1) {
+  .container {
+    padding: 0 36px;
+  }
+}
+
+@media (max-width: $md - 1) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #00203a;
+  font-weight: bold;
+  font-size: 45px;
+}
+

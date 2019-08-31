@@ -1,0 +1,145 @@
+.portfolio__title {
+  margin-bottom: 50px;
+}
+
+.portfolio__menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  width: 570px;
+}
+
+.portfolio__item {
+  list-style: none;
+  font-family: 'Raleway', serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 50px;
+  margin-bottom: 48px;
+  color: #949392;
+}
+
+.portfolio__item--active {
+  border-bottom: 1px solid black;
+  color: #00203a;
+}
+
+.portfolio__living_room_interior {
+  background: url("../img/portfolio-interior-1.jpg") no-repeat;
+  background-position: center;
+    &:hover{
+    width: 480px;
+    };
+}
+
+.portfolio__unknow_interior {
+  background: url("../img/portfolio-interior-2.jpg") no-repeat;
+  background-position: center;
+    &:hover{
+    width: 980px;
+  };
+}
+
+.portfolio__dining_room_interior {
+  background: url("../img/portfolio-interior-3.jpg") no-repeat;
+   background-position: center;
+    &:hover{
+    width: 820px;
+  };
+}
+
+.portfolio__loft_interior {
+  background: url("../img/portfolio-interior-4.jpg") no-repeat;
+   background-position: center;
+    &:hover{
+    width: 790px;
+  };
+}
+
+.portfolio__description {
+  position: relative;
+  z-index: 20;
+  padding: 20px;
+  font-family: 'Raleway', serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: 20px;
+}
+
+.portfolio__btn {
+  display: none;
+  position: relative;
+  padding: none;
+  border-radius: 50%;
+  background-color: rgb(254, 188, 128);
+  opacity: 0.9;
+  width: 84px;
+  height: 84px;
+  z-index: 209;
+  margin: auto;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+  };
+  &::before{
+    top: 40px;
+    left: 22px;
+  };
+  &::after{
+    transform: rotate(90deg);
+    top: 40px;
+    left: 22px;
+  };
+  &:hover{
+    background-color: #e88533;
+  };
+}
+
+@media (max-width: $lg) {
+  .portfolio__menu {
+    width: 100%;
+  }
+
+  .portfolio__item {
+    font-size: 22px;
+  }
+
+  .slider__item:hover {
+    width: 25%;
+  }
+
+  .portfolio__item--active {
+    border: none;
+  }
+
+  .portfolio__description {
+    display: none;
+  }
+}
+
+
+@media (max-width: $sm) {
+
+  .portfolio__menu {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .portfolio__title {
+    margin-bottom: 20px;
+  }
+
+  .portfolio__item {
+    margin-bottom: 0;
+    line-height: 55px;
+  }
+}
+

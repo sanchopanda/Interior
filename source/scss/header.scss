@@ -5,8 +5,6 @@
   }
 }
 
-
-
 .header__toggle {
   margin-right: auto;
   margin-top: auto;
@@ -15,10 +13,6 @@
 }
 
 .header__logo {
-  display: block;
-  width: 63px;
-  height: 29px;
-  background: url("../img/logo.png");
   margin: auto;
 }
 
@@ -36,7 +30,41 @@
   background: url(../img/icon-phone.svg) no-repeat;
   background-size: 12px 17px;
   background-position: left 15px center;
-
 }
+
+@media (max-width: $xl - 1) {
+  .header {
+    height: 166px;
+  }
+
+  .header__logo {
+    margin-left: 0px;
+    margin-right: auto;
+  }
+
+  .header__toggle {
+    margin-right: 0px;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: $md - 1) {
+  .header {
+    height: 77px;
+  }
+
+  .header__logo {
+    margin-left: 0px;
+    margin-right: auto;
+  }
+
+  .header__toggle {
+    margin-right: 0px;
+    margin-left: auto;
+  }
+}
+
+
+
 
 
