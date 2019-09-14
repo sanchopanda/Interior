@@ -13,11 +13,14 @@
 .portfolio__item {
   list-style: none;
   font-family: 'Raleway', serif;
+  display: block;
+  height: 40px;
   font-weight: 600;
   font-size: 18px;
-  line-height: 50px;
   margin-bottom: 48px;
   color: #949392;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .portfolio__item--active {
@@ -130,16 +133,15 @@
 
   .portfolio__menu {
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
   .portfolio__title {
     margin-bottom: 20px;
   }
 
-  .portfolio__item {
-    margin-bottom: 0;
-    line-height: 55px;
+  .portfolio__item  {
+    margin-bottom: 15px;
   }
 }
 
