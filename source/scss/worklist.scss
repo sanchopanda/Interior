@@ -1,0 +1,38 @@
+
+.worklist__item {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.worklist__count {
+  display: block;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fde5d1;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 20px;
+  margin-top: 6px;
+}
+
+.worklist__topic {
+  margin-bottom: 20px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 50px;
+    background-color: black;
+    top: 40px;
+  }
+}
+
+@media (max-width: $sm) {
+  .worklist__count {
+    display: none;
+  }
+}

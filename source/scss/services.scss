@@ -1,0 +1,162 @@
+
+.services__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.services__item {
+  width: 200px;
+  list-style: none;
+  font-family: 'Raleway', serif;
+  font-size: 18px;
+  color: #949392;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.services__item--active {
+  color: #00203a;
+  transform: translateX(50px);
+  font-weight: 700;
+}
+
+.services__card {
+  display: none;
+}
+
+.services__card--active {
+  display: block;
+}
+
+
+.services__img {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.services__des {
+  font-family: 'Raleway', serif;
+  font-size: 18px;
+  color: #949392;
+}
+
+.services__topic {
+  font-family: 'Playfair Display', serif;
+  color: #00203a;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.services__btn {
+  text-transform: uppercase;
+  font-family: 'Raleway', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #00203a;
+  border: 2px solid black;
+  text-align: center;
+  &:hover{
+    text-decoration: none;
+    color: #00203a;
+  };
+}
+
+.services__count {
+  font-family: 'Raleway', serif;
+  font-size: 18px;
+  color: #00203a;
+}
+
+.services__consul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  padding-top: 15px;
+}
+
+
+@media (max-width: $lg) {
+
+  .services__menu {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .services__item {
+    width: 50%;
+    font-size: 22px;
+    margin: 20px 0;
+    padding-right: 20px;
+  }
+
+  .services__item--active {
+    transform: translateX(0px);
+  }
+
+  .services__card {
+    padding-top: 50px;
+  }
+
+  .services__img {
+    width:  calc(100% + 72px);
+    margin-left: -36px;
+  }
+
+  .services__des {
+    margin-bottom: 40px;
+  }
+
+  .services__consul {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .services__btn  {
+    width: 50%;
+  }
+
+  .services__count {
+    margin-top: -150px;
+  }
+
+}
+
+@media (max-width: $sm) {
+  .services__item {
+    width: 100%;
+  }
+
+   .services__imgwrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    height: 390px;
+    overflow: hidden;
+  }
+
+  .services__img {
+    width:  auto;
+    margin-left: 0;
+  }
+
+  .services__count {
+    display: none;
+  }
+
+  .services__btn  {
+    width: 220px;
+    margin: auto;
+  }
+
+  .services__topic {
+    display: none;
+  }
+
+}
