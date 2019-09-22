@@ -106,15 +106,6 @@
       </ul>
     </div>
     <div class="col-12 portfolio__slider slider">
-
-
-     <input type="radio" name="radio" id="radio1" class="slider__radio" checked>
-     <input type="radio" name="radio" id="radio2" class="slider__radio">
-     <input type="radio" name="radio" id="radio3" class="slider__radio">
-     <input type="radio" name="radio" id="radio4" class="slider__radio">
-
-
-
       <div class="slider__wrapper">
         <div class="slider__item portfolio__living_room_interior">
           <p class="portfolio__description">Дизайн интерьера<br> гостиной</p>
@@ -133,16 +124,9 @@
           <a href="#portfolio" class="btn__circle portfolio__btn"></a>
         </div>
       </div>
-
-      <div class="slider__toggle">
-        <label for="radio1"></label>
-        <label for="radio2"></label>
-        <label for="radio3"></label>
-        <label for="radio4"></label>
-      </div>
-
     </div>
   </section>
+
   <section class="services row container" id="#services">
     <div class="col-12 services__title">
       <h2>Наши услуги</h2>
@@ -337,15 +321,32 @@
   <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 
   <script type="text/javascript">
-   $('.reviews__slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    dots: true,
-    dotsClass: 'reviews__dots' ,
-    centerMode: true,
-    focusOnSelect: true,
-    variableWidth: true,
+    $('.reviews__slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: true,
+      dotsClass: 'reviews__dots' ,
+      centerMode: true,
+      focusOnSelect: true,
+      variableWidth: true,
     });
+
+
+
+
+    if(window.matchMedia('(max-width: 1169px)').matches){
+      $('.slider__wrapper').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        dotsClass: 'slider__toggle',
+        centerMode: true,
+        focusOnSelect: true,
+        variableWidth: true,
+      });
+    }
+
+
   </script>
 
 
