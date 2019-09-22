@@ -1,0 +1,135 @@
+.slick-slide {
+  width: calc(100vw - 400px);
+  position: relative;
+  &::after {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    height: 192px;
+    content: "";
+    position: absolute;
+    background-color: rgba(24, 44, 61, 0.9);
+    transition: .5s;
+  }
+}
+
+.slick-center {
+    padding: 0 50px;
+    &::after {
+    background-color: rgba(24, 44, 61, 0);
+  }
+}
+
+.slick-current .reviews__wrapper {
+  max-width: 790px;
+  margin: 0 auto;
+}
+
+.reviews__review {
+  display: flex;
+  padding: 50px;
+  padding-right: 0;
+  width: calc(100% - 140px);
+}
+
+.slick-center .reviews__review{
+  background-color: #fff;
+}
+
+
+@media (min-width: $sm) {
+  .slick-center + .slick-active .reviews__review{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 50px 0;
+    & .reviews__img {
+      margin-left: 0px;
+    }
+  }
+}
+
+.reviews__img {
+  align-self: top;
+  margin-bottom: auto;
+  margin-right: -140px;
+  margin-left: 50px;
+
+}
+
+.reviews__dots {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  & button {
+    font-size: 0;
+    width: 25px;
+    height: 5px;
+    cursor: pointer;
+    background-color: #cdd3cf;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  & .slick-active button {
+    background-color: #1a444a;
+  }
+
+}
+
+
+@media (max-width: $lg) {
+  .slick-slide {
+    width: 100vw;
+    padding: 0 32px;
+    &::after {
+      background-color: rgba(24, 44, 61, 0);
+    }
+  }
+
+  .slick-current .reviews__wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .reviews__review {
+    width: calc(100% - 100px);
+  }
+
+  .reviews__img {
+    margin-right: -100px;
+  }
+}
+
+@media (max-width: $sm) {
+  .slick-slide {
+    width: 100vw;
+    padding: 0 15px;
+  }
+
+  .slick-slide .reviews__wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .reviews__review{
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 80px;
+    & .reviews__img {
+      margin: 0;
+      margin-top: -80px;
+      align-self: center;
+    }
+  }
+}
+
+
+
+
+
