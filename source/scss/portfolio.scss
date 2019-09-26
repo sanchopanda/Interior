@@ -62,7 +62,7 @@
 
 .portfolio__description {
   position: relative;
-  z-index: 20;
+  z-index: 2800;
   padding: 20px;
   font-family: 'Raleway', serif;
   color: #fff;
@@ -113,8 +113,12 @@
     border: none;
   }
 
+  .portfolio__slide {
+    display: flex;
+  }
+
   .portfolio__description {
-    display: none;
+    text-align: center;
   }
 }
 

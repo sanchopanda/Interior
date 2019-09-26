@@ -37,6 +37,15 @@
   background-color: #fff;
 }
 
+.reviews__service {
+  display: block;
+  font-family: 'Raleway', serif;
+  font-size: 16px;
+  color: #efb172;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
 
 @media (min-width: $sm) {
   .slick-center + .slick-active .reviews__review{

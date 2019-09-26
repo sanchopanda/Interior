@@ -14,6 +14,10 @@
 
 .header__logo {
   margin: auto;
+  width: 63px;
+  height: 29px;
+  background: url("../img/logo.png");
+  background-size: contain;
 }
 
 
@@ -32,7 +36,7 @@
   background-position: left 15px center;
 }
 
-@media (max-width: $xl - 1) {
+@media (max-width: $lg) {
   .header {
     height: 166px;
   }
@@ -40,6 +44,9 @@
   .header__logo {
     margin-left: 0px;
     margin-right: auto;
+    width: 85px;
+    height: 46px;
+    background: url("../img/logo-tablet.png") no-repeat;
   }
 
   .header__toggle {
@@ -48,7 +55,7 @@
   }
 }
 
-@media (max-width: $md - 1) {
+@media (max-width: $sm) {
   .header {
     height: 77px;
   }
@@ -56,6 +63,10 @@
   .header__logo {
     margin-left: 0px;
     margin-right: auto;
+     width: 38px;
+    height: 23px;
+    background: url("../img/logo-tablet.png") no-repeat;
+    background-size: contain;
   }
 
   .header__toggle {

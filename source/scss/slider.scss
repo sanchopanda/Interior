@@ -53,7 +53,6 @@
     position: relative;
     height: 610px;
     background-size: cover !important;
-    transition: .3s;
     &::before{
       content: "";
       position: absolute;
@@ -61,6 +60,7 @@
       width: 100%;
       height: 100%;
       background: rgba(24, 44, 61, .8);
+      transition: .8s;
     };
   }
 

@@ -1,0 +1,35 @@
+.footer {
+  background-color: rgba(24, 44, 61, 1);
+  padding: 50px 0;
+}
+
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 70px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 30px;
+  background: url("../img/logo-footer.png")  no-repeat;
+  background-size: contain;
+}
+
+.footer p {
+  color: #ffc487;
+}
+
+@media (max-width: $sm) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
+
+  .footer__center {
+    order: -1;
+    margin-bottom: 20px;
+  }
+}

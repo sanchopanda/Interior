@@ -32,6 +32,18 @@ p {
   font-family: 'Raleway', serif;
   font-size: 18px;
   color: #949392;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:active {
+    color: inherit;
+  }
 }
 
 section {

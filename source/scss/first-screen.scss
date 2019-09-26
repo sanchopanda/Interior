@@ -41,6 +41,12 @@
   display: inline-block;
   &:hover{
     background-color: #e88533;
+    color: #fff;
+    text-decoration: none;
+  };
+  &:active {
+   color: #fff;
+   text-decoration: none;
   };
 }
 
