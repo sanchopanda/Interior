@@ -11,6 +11,7 @@
 }
 
 .first-screen {
+  position: relative;
   background: url("../img/main-cover-bg.png") no-repeat, url("../img/main-bg.jpg") no-repeat;
   background-position: left 0px center, center center;
   background-size: 50% 100%, 1170px 595px;
@@ -58,7 +59,7 @@
   }
 }
 
-@media (max-width: $xl - 1) {
+@media (max-width: $lg) {
 
 
   .first-screen {
@@ -91,6 +92,7 @@
     width: 440px;
     height: 112px;
     font-size: 30px;
+    line-height: 112px;
   }
 }
 
