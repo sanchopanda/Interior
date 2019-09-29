@@ -94,7 +94,8 @@ gulp.task("build", function(done) {
     "clean",
     "copy",
     "html",
-    "style"
+    "style",
+    "images"
   );
 });
 
