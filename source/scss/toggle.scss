@@ -50,3 +50,28 @@
   };
 }
 
+@media (max-width: $xl - 1) {
+  .toggle {
+    width: 64px;
+    height: 46px;
+  }
+
+  .toggle__line {
+    height: 6px;
+    width: 64px;
+    border-radius: 3px;
+  }
+}
+
+@media (max-width: $md - 1) {
+  .toggle {
+    width: 37px;
+    height: 25px;
+  }
+
+  .toggle__line {
+    height: 3px;
+    width: 37px;
+    border-radius: 1px;
+  }
+}

@@ -1,18 +1,39 @@
 .btn {
-  position: relative;
+  display: block;
   text-transform: uppercase;
-  height: 56px;
-  display: inline-block;
   line-height: 56px;
   padding: 0 15px;
   font-weight: bold;
   letter-spacing: 2px;
+  &:hover{
+    cursor: pointer;
+  };
+  &:active {
+    transform: translateY(3px);
+    transition: .2s;
+  };
 }
 
-.btn--arrow {
-  border: none;
-  color: #fff;
-  padding-right: 70px;
-  background: url(../img/arrow.png) no-repeat, #f8a25a;
-  background-position: center right 15px;
+.btn__circle {
+  padding: none;
+  border-radius: 50%;
+  background-color: rgb(254, 188, 128);
+  opacity: 0.9;
+  width: 84px;
+  height: 84px;
+  transition: 0.2s;
+  &:hover{
+    transform: scale(1.2);
+  };
+  &:active{
+    transform: scale(0.7);
+  };
 }
+
+.btn__play {
+  margin: auto;
+  transform: translateX(3px);
+}
+
+
+
