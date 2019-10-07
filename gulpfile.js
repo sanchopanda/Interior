@@ -87,7 +87,8 @@ gulp.task("serve", ["style"], function() {
     notify: false,
     open: true,
     cors: true,
-    ui: false
+    ui: false,
+    browser: 'google chrome'
   });
 
   gulp.watch("source/scss/**/*.{scss,sass}", ["style"]).on("change", server.reload);
