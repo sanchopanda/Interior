@@ -12,7 +12,9 @@ var rename = require("gulp-rename");
 var csso = require('gulp-csso');
 var posthtml = require('gulp-posthtml');
 var include = require("posthtml-include");
-var imagemin = require("gulp-imagemin");
+const imagemin = require("gulp-imagemin");
+const webp = require("imagemin-webp");
+const extReplace = require("gulp-ext-replace");
 
 gulp.task("clean", function() {
   return del("build");
@@ -22,7 +24,7 @@ gulp.task("copy", function(){
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**"
+    "source/js/**",
     ], {
       base: "source"
     })
@@ -43,20 +45,25 @@ gulp.task("images", function(){
     .pipe(imagemin([
       imagemin.optipng({optimizationLebel: 3}),
       imagemin.jpegtran({progressive:true}),
-      imagemin.svgo()
+      imagemin.svgo(),
     ]))
     .pipe(gulp.dest("build/img"));
+    
+    
 });
 
-gulp.task("webp", function () {
-  return gulp.src("build/img/**/*.{png,jpg}")
-  .pipe(imagemin([
+gulp.task("webp", function() {
+  let src = "build/img/**/*.{png,jpg,svg}"; // Where your PNGs are coming from.
+  let dest = "build/img"; // Where your WebPs are going.
+
+  return gulp.src(src)
+    .pipe(imagemin([
       webp({
-        quality: 75
+        quality: 100
       })
     ]))
-  .pipe(extReplace(".webp"))
-  .pipe(gulp.dest("build/img"));
+    .pipe(extReplace(".webp"))
+    .pipe(gulp.dest(dest));
 });
 
 gulp.task("html", function () {
@@ -87,14 +94,14 @@ gulp.task("serve", ["style"], function() {
     notify: false,
     open: true,
     cors: true,
-    ui: false,
-    browser: 'google chrome'
+    ui: false
   });
 
   gulp.watch("source/scss/**/*.{scss,sass}", ["style"]).on("change", server.reload);
   gulp.watch("source/*.html", ["html"]);
   gulp.watch("build/*.html").on("change", server.reload);
   gulp.watch("source/img/**/*.{png,jpg,svg}", ["images"]).on("change", server.reload);
+  gulp.watch("build/img/**/*.{png,jpg}", ["webp"]).on("change", server.reload);
   gulp.watch("source/js/*.js", ["copy_js"]).on("change", server.reload);
 });
 

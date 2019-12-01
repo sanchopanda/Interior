@@ -1,12 +1,23 @@
 
 
-.form__bg {
+ .no-webp .form__bg,
+ .no-js .form__bg  {  
+  background: url("../img/form-bg.jpg") no-repeat;  
+   }
+ 
+ .webp .form__bg {  
+  background: url("../img/form-bg.webp") no-repeat;  
+ } 
+
+ .no-webp .form__bg,
+ .no-js .form__bg,
+.webp .form__bg {
   width: 50%;
   height: 100%;
-  margin-left: 50%;
-  background: url("../img/form-bg.jpg") no-repeat;
+  margin-left: 50%;  
   background-size: cover;
 }
+
 
 
 .form__cover {

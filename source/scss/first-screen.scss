@@ -10,9 +10,22 @@
   padding-bottom: 150px;
 }
 
-.first-screen {
+.no-webp .first-screen,
+.no-js .first-screen  {
   position: relative;
   background: url("../img/main-cover-bg.png") no-repeat, url("../img/main-bg.jpg") no-repeat;
+  
+  }
+
+.webp .first-screen {
+  position: relative;
+  background: url("../img/main-cover-bg.png") no-repeat, url("../img/main-bg.webp") no-repeat;
+ 
+}
+
+.no-webp .first-screen,
+.no-js .first-screen,
+.webp .first-screen { 
   background-position: left 0px center, center center;
   background-size: 50% 100%, 1170px 595px;
 }
@@ -64,11 +77,25 @@
 @media (max-width: $lg) {
 
 
-  .first-screen {
-    background: url("../img/main-cover-bg-tablet.png") no-repeat, url("../img/main-bg-tablet.jpg") no-repeat;
-    background-position: center center, center center;
-    background-size: cover, cover;
+  .no-webp .first-screen,
+.no-js .first-screen  {
+  background: url("../img/main-cover-bg-tablet.png") no-repeat, url("../img/main-bg-tablet.jpg") no-repeat;
+  
   }
+
+.webp .first-screen {
+  background: url("../img/main-cover-bg-tablet.png") no-repeat, url("../img/main-bg-tablet.webp") no-repeat;
+ 
+}
+
+.no-webp .first-screen,
+.no-js .first-screen,
+.webp .first-screen { 
+  background-position: center center, center center;
+    background-size: cover, cover;
+}
+
+  
 
   .first-screen__opening {
     height: 940px;
@@ -101,11 +128,7 @@
 @media (max-width: $md - 1) {
 
 
-  .first-screen {
-    background: url("../img/main-cover-bg-tablet.png") no-repeat, url("../img/main-bg-tablet.jpg") no-repeat;
-    background-position: center center, center center;
-    background-size: cover, cover;
-  }
+  
 
   .first-screen__opening {
     height: 532px;

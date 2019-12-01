@@ -41,37 +41,77 @@
   width: 100%;
 }
 
-.portfolio__living_room_interior {
+
+.no-webp .portfolio__living_room_interior,
+.no-js .portfolio__living_room_interior  {
   background: url("../img/portfolio-interior-1.jpg") no-repeat;
   background-position: center;
     &:hover{
     width: 480px;
     };
-}
+  }
 
-.portfolio__unknow_interior {
+.webp .portfolio__living_room_interior {
+  background: url("../img/portfolio-interior-1.webp") no-repeat;
+  background-position: center;
+    &:hover{
+    width: 480px;
+    };
+} 
+
+
+.no-webp .portfolio__unknow_interior,
+.no-js .portfolio__unknow_interior  {
   background: url("../img/portfolio-interior-2.jpg") no-repeat;
   background-position: center;
     &:hover{
     width: 980px;
   };
-}
+  }
 
-.portfolio__dining_room_interior {
+.webp .portfolio__unknow_interior {
+  background: url("../img/portfolio-interior-2.webp") no-repeat;
+  background-position: center;
+    &:hover{
+    width: 980px;
+  };
+} 
+
+.no-webp .portfolio__dining_room_interior,
+.no-js .portfolio__dining_room_interior  {
   background: url("../img/portfolio-interior-3.jpg") no-repeat;
    background-position: center;
     &:hover{
     width: 820px;
   };
-}
+  }
 
-.portfolio__loft_interior {
+.webp .portfolio__dining_room_interior {
+  background: url("../img/portfolio-interior-3.webp") no-repeat;
+   background-position: center;
+    &:hover{
+    width: 820px;
+  };
+} 
+
+.no-webp .portfolio__loft_interior,
+.no-js .portfolio__loft_interior  {
   background: url("../img/portfolio-interior-4.jpg") no-repeat;
    background-position: center;
     &:hover{
     width: 790px;
   };
-}
+  }
+
+.webp .portfolio__loft_interior {
+  background: url("../img/portfolio-interior-4.webp") no-repeat;
+   background-position: center;
+    &:hover{
+    width: 790px;
+  };
+} 
+
+
 
 .portfolio__description {
   position: relative;
