@@ -59,7 +59,7 @@ gulp.task("webp", function() {
   return gulp.src(src)
     .pipe(imagemin([
       webp({
-        quality: 100
+        quality: 80
       })
     ]))
     .pipe(extReplace(".webp"))
