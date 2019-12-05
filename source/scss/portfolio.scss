@@ -97,10 +97,7 @@
 
 .webp .portfolio__living_room_interior {
   background: url("../img/portfolio-interior-1.webp") no-repeat;
-  background-position: center;
-    &:hover{
-    width: 480px;
-    };
+  background-position: center;    
 } 
 
 
@@ -182,6 +179,9 @@
 }
 
 @media (max-width: $lg) {
+  .portfolio{
+    overflow: hidden;
+  }
   .portfolio__menu {
     width: 100%;
   }

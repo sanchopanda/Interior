@@ -1,12 +1,15 @@
 .video {
   position: relative;
+  overflow: hidden;  
 }
 
 .video__content {
   width: 100%;
   min-width: 1170px;
-  height: auto;
+  height: auto;  
 }
+
+
 
 .video__curtain {
   display: flex;

@@ -71,11 +71,11 @@
 
 @media (max-width: $sm) {
   .slider__wrapper {
-    margin: 0 -20px;
+    margin: 0 -15px;
   }
 
   .slider .slick-slide {
-    width: calc(100vw - 40px);
+    width: calc(100vw - 30px);
   }
 
   .slick-center:before {
