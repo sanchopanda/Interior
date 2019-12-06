@@ -1,222 +1,198 @@
 .portfolio__menu {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-  width: 570px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 570px;
 }
 
 .portfolio__item {
-  list-style: none;
-  font-family: 'Raleway', serif;
-  display: block;
-  height: 40px;
-  font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 48px;
-  color: #949392;
-  text-decoration: none;
-  cursor: pointer;
+    list-style: none;
+    font-family: 'Raleway', serif;
+    display: block;
+    height: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 48px;
+    color: #949392;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .portfolio__item--active {
-  border-bottom: 1px solid black;
-  color: #00203a;
+    border-bottom: 1px solid black;
+    color: #00203a;
 }
 
 .portfolio__tab {
-  display: none;
+    display: none;
 }
 
 .portfolio__tab--active {
-  display: block;
+    display: block;
 }
 
-.portfolio__cap  {
-  text-align: center;
-  width: 100%;
+.portfolio__cap {
+    text-align: center;
+    width: 100%;
 }
 
 .portfolio__slider {
-  width: 100%;
+    width: 100%;
 }
 
 .portfolio__slide {
-  background-position: center;
+    background-position: center;
 }
 
 @media (min-width: $xl) {
-  
-  .no-webp .portfolio__living_room_interior,
-.no-js .portfolio__living_room_interior,
-.webp .portfolio__living_room_interior
-    {   
-      &:hover{
-      width: 480px;
-      };
+    .no-webp .portfolio__living_room_interior,
+    .no-js .portfolio__living_room_interior,
+    .webp .portfolio__living_room_interior {
+        &:hover {
+            width: 480px;
+        }
+        ;
     }
-  
-
-  
-  
     .no-webp .portfolio__unknow_interior,
     .no-js .portfolio__unknow_interior,
-    .webp .portfolio__unknow_interior
-     {   
-      &:hover{
-      width: 980px;
-    };
-    } 
-
+    .webp .portfolio__unknow_interior {
+        &:hover {
+            width: 980px;
+        }
+        ;
+    }
     .no-webp .portfolio__dining_room_interior,
     .no-js .portfolio__dining_room_interior,
-    .webp .portfolio__dining_room_interior
-   {    
-      &:hover{
-      width: 820px;
-    };
+    .webp .portfolio__dining_room_interior {
+        &:hover {
+            width: 820px;
+        }
+        ;
     }
-  
-
     .no-webp .portfolio__loft_interior,
     .no-js .portfolio__loft_interior,
-    .webp .portfolio__loft_interior
-  {    
-      &:hover{
-      width: 790px;
-    };
+    .webp .portfolio__loft_interior {
+        &:hover {
+            width: 790px;
+        }
+        ;
     }
 }
 
 .no-webp .portfolio__living_room_interior,
-.no-js .portfolio__living_room_interior  {
-  background: url("../img/portfolio-interior-1.jpg") no-repeat;
-  background-position: center;
-    
-  }
+.no-js .portfolio__living_room_interior {
+    background: url("../img/portfolio-interior-1.jpg") no-repeat;
+    background-position: center;
+}
 
 .webp .portfolio__living_room_interior {
-  background: url("../img/portfolio-interior-1.webp") no-repeat;
-  background-position: center;    
-} 
-
+    background: url("../img/portfolio-interior-1.webp") no-repeat;
+    background-position: center;
+}
 
 .no-webp .portfolio__unknow_interior,
-.no-js .portfolio__unknow_interior  {
-  background: url("../img/portfolio-interior-2.jpg") no-repeat;
-  background-position: center;
-    
-  }
+.no-js .portfolio__unknow_interior {
+    background: url("../img/portfolio-interior-2.jpg") no-repeat;
+    background-position: center;
+}
 
 .webp .portfolio__unknow_interior {
-  background: url("../img/portfolio-interior-2.webp") no-repeat;
-  background-position: center;
-   
-} 
+    background: url("../img/portfolio-interior-2.webp") no-repeat;
+    background-position: center;
+}
 
 .no-webp .portfolio__dining_room_interior,
-.no-js .portfolio__dining_room_interior  {
-  background: url("../img/portfolio-interior-3.jpg") no-repeat;
-   background-position: center;
-    
-  }
+.no-js .portfolio__dining_room_interior {
+    background: url("../img/portfolio-interior-3.jpg") no-repeat;
+    background-position: center;
+}
 
 .webp .portfolio__dining_room_interior {
-  background: url("../img/portfolio-interior-3.webp") no-repeat;
-   background-position: center;
-    
-} 
+    background: url("../img/portfolio-interior-3.webp") no-repeat;
+    background-position: center;
+}
 
 .no-webp .portfolio__loft_interior,
-.no-js .portfolio__loft_interior  {
-  background: url("../img/portfolio-interior-4.jpg") no-repeat;
-   background-position: center;
-    
-  }
+.no-js .portfolio__loft_interior {
+    background: url("../img/portfolio-interior-4.jpg") no-repeat;
+    background-position: center;
+}
 
 .webp .portfolio__loft_interior {
-  background: url("../img/portfolio-interior-4.webp") no-repeat;
-   background-position: center;
-    
-} 
-
-
+    background: url("../img/portfolio-interior-4.webp") no-repeat;
+    background-position: center;
+}
 
 .portfolio__description {
-  position: relative;
-  z-index: 2800;
-  padding: 20px;
-  font-family: 'Raleway', serif;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 1.2px;
-  line-height: 20px;
+    position: relative;
+    z-index: 2800;
+    padding: 20px;
+    font-family: 'Raleway', serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    line-height: 20px;
 }
 
 .portfolio__btn {
-  display: none;
-  position: relative;
-  margin: auto;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 3px;
-    background-color: #fff;
-  };
-  &::before{
-    top: 40px;
-    left: 22px;
-  };
-  &::after{
-    transform: rotate(90deg);
-    top: 40px;
-    left: 22px;
-  };
+    display: none;
+    position: relative;
+    margin: auto;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 3px;
+        background-color: #fff;
+    }
+    ;
+    &::before {
+        top: 40px;
+        left: 22px;
+    }
+    ;
+    &::after {
+        transform: rotate(90deg);
+        top: 40px;
+        left: 22px;
+    }
+    ;
 }
 
 @media (max-width: $lg) {
-  .portfolio{
-    overflow: hidden;
-  }
-  .portfolio__menu {
-    width: 100%;
-  }
-
-  .portfolio__item {
-    font-size: 22px;
-  }
-
-  .portfolio__item--active {
-    border: none;
-  }
-
-  .portfolio__slide {
-    display: flex;
-  }
-
-  .portfolio__description {
-    text-align: center;
-  }
+    .portfolio {
+        overflow: hidden;
+    }
+    .portfolio__menu {
+        width: 100%;
+    }
+    .portfolio__item {
+        font-size: 22px;
+    }
+    .portfolio__item--active {
+        border: none;
+    }
+    .portfolio__slide {
+        display: flex;
+    }
+    .portfolio__description {
+        text-align: center;
+    }
 }
-
 
 @media (max-width: $sm) {
-
-  .portfolio__menu {
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-
-  .portfolio__title {
-    margin-bottom: 20px;
-  }
-
-  .portfolio__item  {
-    margin-bottom: 15px;
-  }
+    .portfolio__menu {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .portfolio__title {
+        margin-bottom: 20px;
+    }
+    .portfolio__item {
+        margin-bottom: 15px;
+    }
 }
-
